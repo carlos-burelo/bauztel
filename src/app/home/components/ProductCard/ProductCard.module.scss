@@ -1,0 +1,50 @@
+.product {
+  position: relative;
+}
+
+.image {
+  object-fit: cover;
+  border-radius: .5em;
+  box-shadow: var(--boxShadowCard);
+  width: 100%;
+
+  @include tablet {
+    width: 300px;
+  }
+}
+
+.name {
+  @include textCut(1);
+}
+
+.info {
+  padding: 1em;
+  background-color: var(--backgroundBody);
+  box-shadow: var(--boxShadowCard);
+  border: solid 1px var(--borderColorCard);
+  min-height: 180px;
+  border-radius: .5em;
+  display: grid;
+  position: absolute;
+  bottom: -1em;
+  left: 1em;
+  right: 1em;
+  align-content: space-between;
+
+  @include portatil {
+    min-height: 180px;
+  }
+}
+
+.priceArea {
+  @include spaceBetween;
+}
+
+.price {
+  font-weight: bold;
+  color: var(--colorSubTitle);
+}
+
+.button {
+  padding: 1em 2em;
+}

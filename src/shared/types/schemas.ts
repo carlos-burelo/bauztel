@@ -10,6 +10,7 @@ export interface ProductInterface {
   aditionalInfo: AditionalInfoInterface
   reviews: ReviewInterface[]
   categories: string[]
+  type: string
   summary: string
   sale: {
     discount: number

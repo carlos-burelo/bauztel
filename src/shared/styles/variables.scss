@@ -13,6 +13,10 @@
   --backgroundInput: #fff3da;
   --borderColorInput: #c6b591;
 
+  // cards
+  --borderColorCard: #f2e4c6;
+  --boxShadowCard: 0 0 1em rgba(78, 53, 7, 0.301);
+
   --layoutPadding: 10px;
   --headerHeight: 70px;
   --heroHeight: calc(100vh - var(--headerHeight));

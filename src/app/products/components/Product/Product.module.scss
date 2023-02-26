@@ -1,6 +1,8 @@
 .product {
   display: grid;
   gap: .2em;
+  box-shadow: var(--boxShadowCard);
+  border-radius: .5em;
 }
 
 .image {
@@ -8,4 +10,24 @@
   height: 100%;
   object-fit: cover;
   border-radius: .5em;
+}
+
+.name {
+  @include textCut(1);
+  font-size: 1.5em;
+}
+
+.info {
+  padding: 1em;
+  gap: 1em;
+  min-height: 120px;
+}
+
+.priceArea {
+  @include alignCenter;
+}
+
+.price {
+  font-weight: 600;
+  color: var(--colorSubTitle);
 }

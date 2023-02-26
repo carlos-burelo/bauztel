@@ -1,0 +1,15 @@
+.title {
+  font-size: 2.4em;
+  margin-block: 1em;
+}
+
+.products {
+  display: grid;
+  column-gap: 1em;
+  row-gap: 2em;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+  @include tablet {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}

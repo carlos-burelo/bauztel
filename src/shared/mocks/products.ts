@@ -1,10 +1,13 @@
 import { ProductInterface, ReviewInterface } from '../types/schemas'
 
+const types = ['molido', 'tostado', 'grano', 'instantaneo', 'capsulas']
+
 export const PRODUCTS: ProductInterface[] =
   Array.from({ length: 10 }, (_, i) => ({
     slug: `product-${i}`,
     name: `Café Molido o Tostado ${i}`,
     price: 1000,
+    type: types[Math.round(Math.random() * (types.length - 1))],
     thumbnail: '/hero.jpg',
     gallery: Array.from({ length: 5 }, () => `/hero.jpg`),
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
@@ -20,7 +23,7 @@ export const PRODUCTS: ProductInterface[] =
     } as ReviewInterface)),
     ...i % 2 === 0 && {
       sale: {
-        discount: 10,
+        discount: Math.round(Math.random() * (50 - 10) + 10),
         price: 900,
         startDate: new Date(),
         endDate: new Date(),
