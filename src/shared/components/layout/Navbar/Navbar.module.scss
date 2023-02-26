@@ -4,7 +4,8 @@
   position: sticky;
   top: 0;
   background-color: var(--backgroundBody);
-  @include spaceBeetwen;
+  @include spaceBetween;
+  z-index: 10000;
 }
 
 .navbar {
@@ -14,20 +15,42 @@
 
 .navLinks {
   display: none;
+  position: fixed;
+  gap: 1em;
+  border-radius: .5em;
+  top: calc(var(--headerHeight));
+  right: var(--layoutPadding);
+  border: 1px solid var(--borderColorInput);
+  padding: 1em;
+  background-color: var(--backgroundBody);
 
-
-  @include tablet {
-    @include alignCenter;
+  &.active {
+    display: grid;
   }
+
+  @include fold {
+    gap: 1em;
+    position: inherit;
+    @include alignCenter;
+    border: none;
+
+    &.active {
+      display: inherit;
+    }
+  }
+
+  @include tablet {}
 
   @include portatil {
     gap: 2em;
   }
+
 }
 
 .menu {
   color: var(--colorTitle);
   padding: .5em .5em;
+  font-size: 1.2em;
 
   @include tablet {
     display: none;
