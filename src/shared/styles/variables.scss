@@ -1,0 +1,38 @@
+@import 'mixins.scss';
+
+
+:root {
+  --backgroundBody: #f5efe2;
+  --colorTitle: #1e180a;
+  --colorSubTitle: #69531b;
+  --colorText: #4d4635;
+
+  --backgroundButton: #c6b591;
+
+  // inputs
+  --backgroundInput: #fff3da;
+  --borderColorInput: #c6b591;
+
+  --layoutPadding: 10px;
+  --headerHeight: 70px;
+  --heroHeight: calc(100vh - var(--headerHeight));
+  --gapInterSections: 4em;
+
+
+
+  @include fold {
+    --layoutPadding: 30px;
+  }
+
+  @include tablet {
+    --layoutPadding: 50px;
+  }
+
+  @include portatil {
+    --layoutPadding: 80px;
+  }
+
+  @include desktop {
+    --layoutPadding: 120px;
+  }
+}

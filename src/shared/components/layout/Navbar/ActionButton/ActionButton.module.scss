@@ -1,0 +1,5 @@
+.action {
+  all: unset;
+  cursor: pointer;
+  @include flexCenter;
+}

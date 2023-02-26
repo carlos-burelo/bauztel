@@ -1,0 +1,37 @@
+.landing {
+  display: grid;
+  height: var(--heroHeight);
+  align-content: center;
+
+  @include desktop {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.title {
+  font-size: 4em;
+
+  @include fold {
+    font-size: 4.5em;
+  }
+}
+
+.details {
+  color: var(--colorText);
+}
+
+
+.img {
+  display: none;
+
+  @include desktop {
+    top: 0;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    width: calc(50% - var(--layoutPadding));
+  }
+}

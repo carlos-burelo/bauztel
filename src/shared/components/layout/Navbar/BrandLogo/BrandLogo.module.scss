@@ -1,0 +1,12 @@
+.logo {
+  filter: invert(100%);
+  mix-blend-mode: difference;
+  font-weight: 700;
+
+  font-size: 1.2em;
+
+  @include tablet {
+    font-size: 1.5em;
+  }
+
+}

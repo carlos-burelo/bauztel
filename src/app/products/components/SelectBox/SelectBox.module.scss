@@ -1,0 +1,41 @@
+.title {
+  font-weight: 500;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.categoryOptions,
+.category {
+  display: grid;
+  gap: .5em;
+}
+
+.categoryOption {
+  display: flex;
+  grid-template-columns: .1fr .9fr;
+  gap: .2em;
+}
+
+.categoryInput {
+  width: auto;
+}
+
+.filter {
+  border-radius: 0 .5em .5em 0;
+}
+
+.selectBox {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 120%;
+  border: solid 1px var(--borderColorInput);
+  padding: 0.5em;
+  border-radius: 0.5em;
+  background-color: var(--backgroundInput);
+}
+
+// .category {
+//   display: none;
+// }

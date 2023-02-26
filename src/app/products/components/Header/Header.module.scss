@@ -1,0 +1,25 @@
+.header {
+  width: 100%;
+  text-align: center;
+  padding-block: 2rem;
+  @include flexCenter;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.title {
+  font-size: 3em;
+
+  @include tablet {
+    font-size: 4em;
+    max-width: 80%;
+  }
+
+  @include desktop {
+    max-width: 60%;
+  }
+}
+
+.breadcrumb {
+  font-size: 1.2em;
+}

@@ -1,0 +1,26 @@
+.specs {
+  margin-top: 3em;
+  display: grid;
+
+  @include portatil {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.summaryArea {
+  display: grid;
+  gap: 1em;
+  max-width: 60ch;
+
+
+
+}
+
+.summaryTitle,
+.aditionalInfoTitle {
+  font-size: 2em;
+}
+
+.aditionalInfo {
+  margin-top: 2em;
+}

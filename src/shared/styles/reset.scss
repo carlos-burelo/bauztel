@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-color: var(--backgroundBody);
+}
+
+.container {
+  padding-inline: var(--layoutPadding);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+svg {
+  fill: currentColor;
+  width: 1.25em;
+  height: 1.25em;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--colorTitle);
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+button {
+  background-color: var(--backgroundButton);
+  padding: .25em 1em;
+  border: none;
+  outline: none;
+  border-radius: .5em;
+  color: var(--colorTitle);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+p {
+  line-height: 1.8;
+  color: var(--colorText);
+  font-size: 1.2em;
+}
+
+input {
+  width: 100%;
+  outline: none;
+  border: solid 1px var(--borderColorInput);
+  padding: .75em 1em;
+  border-radius: 0.5em;
+  background-color: var(--backgroundInput);
+  color: var(--colorText);
+
+  &::placeholder {
+    color: var(--colorText);
+  }
+
+  &:focus,
+  &:hover {
+    box-shadow: 0 0 0 1px var(--borderColorInput);
+  }
+}

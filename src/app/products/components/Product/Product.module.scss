@@ -1,0 +1,11 @@
+.product {
+  display: grid;
+  gap: .2em;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: .5em;
+}
