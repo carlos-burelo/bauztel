@@ -20,10 +20,10 @@ const Navbar: FC = () => {
       <BrandLogo />
       <nav className={_.navbar}>
         <div className={cx(_.navLinks, open && _.active)}>
-          <NavLink onClick={handleMenu} to='/' text='Inicio' />
           <NavLink onClick={handleMenu} to='/products' text='Productos' />
           <NavLink onClick={handleMenu} to='/about' text='Nosotros' />
-          <NavLink onClick={handleMenu} to='/seller' text='Vendedores' />
+          <NavLink onClick={handleMenu} to='/wholesale' text='Vendedores' />
+          <NavLink onClick={handleMenu} to='/contact' text='Contactar' />
         </div>
         <Actions />
         <button
