@@ -1,0 +1,28 @@
+.distinctions {
+  display: grid;
+  gap: 2.5em;
+}
+
+.head {
+  @include tablet {
+    max-width: 80%;
+    margin: auto;
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: 2.4em;
+}
+
+.text {
+  text-align: center;
+  margin: auto;
+}
+
+.cards {
+  // min 3 cards auto fit
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}

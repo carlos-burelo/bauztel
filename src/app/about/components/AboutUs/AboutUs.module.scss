@@ -1,0 +1,32 @@
+.aboutUs {
+  display: grid;
+  gap: 1em;
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include desktop {
+    grid-template-columns: .5fr 1fr;
+  }
+}
+
+.box {
+  background-color: var(--backgroundCard);
+  padding: 2em;
+  border-radius: 1em;
+  box-shadow: 0 0 0.5em var(--boxShadowCard);
+  display: grid;
+  gap: 1em;
+  align-content: start;
+}
+
+.img {
+  width: 100%;
+  box-shadow: 0 0 0.5em var(--boxShadowCard);
+  border-radius: 1em;
+}
+
+.title {
+  font-size: 3em;
+}

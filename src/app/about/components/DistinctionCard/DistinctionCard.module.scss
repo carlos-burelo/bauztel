@@ -1,0 +1,19 @@
+.distinctionCard {
+  padding: 1.5em;
+  background-color: var(--backgroundCard);
+  border-radius: 0.75em;
+  display: grid;
+  gap: 1em;
+  min-height: 300px;
+  justify-items: center;
+  text-align: center;
+
+  @include tablet {
+    text-align: start;
+    justify-items: flex-start;
+  }
+}
+
+.title {
+  font-size: 1.8em;
+}
