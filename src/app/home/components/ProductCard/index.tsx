@@ -17,6 +17,7 @@ const ProductCard: FC<ProductInterface> = (product) => {
         alt={name}
         width={300}
         height={400}
+        priority
       />
       <div className={_.info}>
         <div className={_.meta}>
