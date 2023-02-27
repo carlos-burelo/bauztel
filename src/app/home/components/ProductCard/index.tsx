@@ -1,3 +1,4 @@
+import Button from '#/shared/components/elements/Button'
 import { ProductInterface } from '#/shared/types/schemas'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -29,9 +30,7 @@ const ProductCard: FC<ProductInterface> = (product) => {
             )}
           </div>
         </div>
-        <button className={_.button}>
-          <span>View Product</span>
-        </button>
+        <Button text='View Product' href={`/products/${slug}`} fit />
       </div>
     </Link>
   )

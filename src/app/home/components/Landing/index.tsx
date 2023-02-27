@@ -1,3 +1,4 @@
+import Button from '#/shared/components/elements/Button'
 import Image from 'next/image'
 import _ from './Landing.module.scss'
 
@@ -20,8 +21,12 @@ const Landing: FC = () => {
           Pure Experience.
         </h1>
         <p className={_.details}>
-          We’re proud to offer our exquisite coffee and proud to support producer partners doing sustainability work that benefits their farms, their communities, and the planet.
+          We&#8217;re proud to offer our exquisite coffee and proud to support producer partners doing sustainability work that benefits their farms, their communities, and the planet.
         </p>
+        <div className={_.buttons}>
+          <Button href='/products' text='Shop now' />
+          <Button href='/about' text='Our story' />
+        </div>
       </section>
     </main>
   )

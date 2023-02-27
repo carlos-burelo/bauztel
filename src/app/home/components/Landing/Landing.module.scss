@@ -8,11 +8,16 @@
   }
 }
 
+.hero {
+  display: grid;
+  gap: 1em;
+}
+
 .title {
   font-size: 4em;
 
   @include fold {
-    font-size: 4.5em;
+    font-size: 4.2em;
   }
 }
 
@@ -34,4 +39,9 @@
     display: block;
     width: calc(50% - var(--layoutPadding));
   }
+}
+
+.buttons {
+  display: flex;
+  gap: 1em;
 }

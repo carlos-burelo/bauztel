@@ -1,0 +1,24 @@
+.order {
+  display: grid;
+  gap: 3em;
+
+  @include tablet {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.info {
+  display: grid;
+  gap: 1.5em;
+  align-content: center;
+}
+
+.title {
+  font-size: 2.5em;
+}
+
+.img {
+  object-fit: cover;
+  border-radius: .5em;
+  width: 100%;
+}
