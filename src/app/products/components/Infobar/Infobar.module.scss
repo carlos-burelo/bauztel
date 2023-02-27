@@ -2,6 +2,7 @@
   margin-inline: auto;
   display: grid;
   grid-template-columns: 1fr .3fr;
+  width: 100%;
 
   @include tablet {
     max-width: 70%;
