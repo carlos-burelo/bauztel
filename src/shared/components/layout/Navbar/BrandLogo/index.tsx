@@ -1,10 +1,11 @@
 import _ from './BrandLogo.module.scss'
+import Link from 'next/link'
 
 const BrandLogo: FC = () => {
   return (
-    <div className={_.logo}>
+    <Link href='/' className={_.logo}>
       Bauztel Coffe
-    </div>
+    </Link>
   )
 }
 

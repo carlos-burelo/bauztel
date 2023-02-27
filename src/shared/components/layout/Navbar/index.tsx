@@ -22,7 +22,7 @@ const Navbar: FC = () => {
         <div className={cx(_.navLinks, open && _.active)}>
           <NavLink onClick={handleMenu} to='/' text='Inicio' />
           <NavLink onClick={handleMenu} to='/products' text='Productos' />
-          <NavLink onClick={handleMenu} to='/about-us' text='Nosotros' />
+          <NavLink onClick={handleMenu} to='/about' text='Nosotros' />
           <NavLink onClick={handleMenu} to='/seller' text='Vendedores' />
         </div>
         <Actions />
