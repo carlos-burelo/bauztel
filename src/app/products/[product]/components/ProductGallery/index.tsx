@@ -29,6 +29,7 @@ const ProductGallery: FC<Props> = ({ gallery, thumbnail, alt }) => {
             onClick={handleImageChange(image)}
             width={70}
             height={70}
+            priority
           />
         ))}
       </div>

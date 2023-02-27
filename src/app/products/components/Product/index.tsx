@@ -12,7 +12,14 @@ const Product: FC<Props> = ({ name, price, thumbnail, slug, sale }) => {
 
   return (
     <Link href={`/products/${slug}`} className={_.product}>
-      <Image className={_.image} src={thumbnail} alt={name} width={300} height={300} />
+      <Image
+        className={_.image}
+        src={thumbnail}
+        alt={name}
+        width={300}
+        height={300}
+        priority
+      />
       <div className={_.info}>
         <h3 className={_.name}>{name}</h3>
         <div className={_.priceArea}>
