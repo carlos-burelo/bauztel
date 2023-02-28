@@ -64,8 +64,22 @@ const Gallery: FC = () => {
           ))}
         </div>
         <div className={_.buttons}>
-          <button className={_.btn} onClick={handlePrev}><ArroLeftIcon /></button>
-          <button className={_.btn} onClick={handleNext}><ArroRightIcon /></button>
+          <button
+            className={_.btn}
+            title="Previous"
+            type='button'
+            onClick={handlePrev}
+          >
+            <ArroLeftIcon />
+          </button>
+          <button
+            className={_.btn}
+            title="Next"
+            type='button'
+            onClick={handleNext}
+          >
+            <ArroRightIcon />
+          </button>
         </div>
       </div>
     </div>

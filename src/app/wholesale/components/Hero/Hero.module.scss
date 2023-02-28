@@ -1,0 +1,30 @@
+.hero {
+  display: grid;
+  gap: 1em;
+  align-content: center;
+  height: var(--heroHeight);
+
+  @include tablet {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.content {
+  display: grid;
+  gap: 1em;
+  align-content: center;
+}
+
+.title {
+  font-size: 3.2em;
+}
+
+.image {
+  width: 100%;
+  border-radius: .5em;
+  height: 100%;
+
+  @include tablet {
+    height: var(--heroHeight);
+  }
+}

@@ -1,7 +1,13 @@
+@import 'mixins.scss';
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  &::-webkit-tap-highlight-color {
+    background-color: transparent;
+  }
 }
 
 html {
@@ -46,6 +52,11 @@ ol {
   list-style: none;
 }
 
+mark {
+  background-color: transparent;
+  color: var(--colorSubTitle);
+}
+
 button {
   background-color: var(--backgroundButton);
   padding: .25em 1em;
@@ -55,6 +66,7 @@ button {
   color: var(--colorTitle);
   font-weight: 600;
   cursor: pointer;
+  @include flexCenter;
 }
 
 p {

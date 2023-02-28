@@ -1,0 +1,36 @@
+.container {
+  display: grid;
+  gap: 2em;
+
+  @include tablet {
+    grid-template-columns: 1.3fr 1fr;
+  }
+}
+
+.steps {
+  display: grid;
+  gap: 1em;
+
+  @include tablet {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.step {
+  background-color: var(--backgroundCard);
+  @include flexCenter;
+  padding: 1em;
+  border-radius: .5em;
+  flex-direction: column;
+  gap: 1em;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.2em;
+}
+
+.title {
+  font-size: 2em;
+
+}

@@ -1,10 +1,13 @@
+import Hero from './components/Hero'
+import Steps from './components/Steps'
 import _ from './wholesale.module.scss'
 
 const WholesalePage: Page = () => {
   return (
-    <center>
-      <h1>Building... 🏗️</h1>
-    </center>
+    <div className={_.container}>
+      <Hero />
+      <Steps />
+    </div >
   )
 }
 
