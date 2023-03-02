@@ -39,8 +39,6 @@
     }
   }
 
-  @include tablet {}
-
   @include portatil {
     gap: 2em;
   }
@@ -52,7 +50,7 @@
   padding: .5em .5em;
   font-size: 1.2em;
 
-  @include tablet {
+  @include fold {
     display: none;
   }
 }

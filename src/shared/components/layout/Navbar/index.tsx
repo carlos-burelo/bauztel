@@ -22,8 +22,8 @@ const Navbar: FC = () => {
         <div className={cx(_.navLinks, open && _.active)}>
           <NavLink onClick={handleMenu} to='/products' text='Productos' />
           <NavLink onClick={handleMenu} to='/about' text='Nosotros' />
-          <NavLink onClick={handleMenu} to='/wholesale' text='Vendedores' />
-          <NavLink onClick={handleMenu} to='/contact' text='Contactar' />
+          <NavLink onClick={handleMenu} to='/wholesale' text='Afiliados' />
+          <NavLink onClick={handleMenu} to='/contact' text='Contactanos' />
         </div>
         <Actions />
         <button
