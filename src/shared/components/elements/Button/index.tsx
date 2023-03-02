@@ -3,24 +3,24 @@ import Link from 'next/link'
 import _ from './Button.module.scss'
 
 interface Props {
-  text: string
+  text?: string
   href?: string
   className?: string
   fit?: boolean
 }
 
-const Button: FC<Props> = ({ text, href, className, fit }) => {
+const Button: FC<Props> = ({ text, href, className, fit, children }) => {
   const styles = {
     width: fit ? 'fit-content' : 'auto'
   }
 
   return href ? (
     <Link href={href} style={styles} className={cx(_.btn, className)}>
-      {text}
+      {text || children}
     </Link>
   ) : (
     <button style={styles} className={cx(_.btn, className)}>
-      {text}
+      {text || children}
     </button>
   )
 }
