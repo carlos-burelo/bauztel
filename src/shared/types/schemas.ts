@@ -15,8 +15,8 @@ export interface ProductInterface {
   sale: {
     discount: number
     price: number
-    startDate: Date
-    endDate: Date
+    startDate: string
+    endDate: string
   }
 }
 
