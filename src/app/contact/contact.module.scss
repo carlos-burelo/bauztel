@@ -1,0 +1,9 @@
+.contact {
+  display: grid;
+  gap: 2em;
+  align-content: center;
+
+  @include tablet {
+    grid-template-columns: 1fr 1fr;
+  }
+}

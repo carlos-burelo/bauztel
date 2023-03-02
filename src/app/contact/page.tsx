@@ -1,10 +1,13 @@
-import _ from './wholesale.module.scss'
+import Form from './components/Form'
+import Hero from './components/Hero'
+import _ from './contact.module.scss'
 
 const ContactPage: Page = () => {
   return (
-    <center>
-      <h1>Building... 🏗️</h1>
-    </center>
+    <div className={_.contact}>
+      <Hero />
+      <Form />
+    </div>
   )
 }
 

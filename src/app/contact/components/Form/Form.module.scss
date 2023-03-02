@@ -1,0 +1,66 @@
+.container {
+  display: grid;
+  align-content: center;
+  margin: auto;
+
+  @include fold {
+    width: 90%;
+  }
+
+  @include tablet {
+    width: 80%;
+  }
+
+  @include portatil {
+    width: 70%;
+  }
+}
+
+.title {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: var(--colorTitle);
+  margin-bottom: 1em;
+}
+
+.form {
+  box-shadow: var(--boxShadowCardLight);
+  padding: 2.5rem;
+  border-radius: 0.5em;
+  width: 100%;
+  display: grid;
+  gap: 2em;
+  background-color: var(--backgroundCardAlt);
+}
+
+.formGroupFlex {
+  display: grid;
+  gap: 1em;
+
+  @include tablet {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.formGroup {
+  display: grid;
+  gap: 0.5em;
+  font-size: 1.1em;
+
+  label {
+    color: var(--colorTitle);
+    font-weight: 700;
+  }
+
+  input {
+    font-size: 1em;
+  }
+
+  textarea {
+    font-size: 1.2em;
+  }
+}
+
+.send {
+  padding: 1em 1em;
+}
