@@ -28,9 +28,10 @@
 
 .img {
   display: none;
+  height: var(--heroHeight);
 
   @include desktop {
-    top: 0;
+    top: var(--headerHeight);
     object-fit: cover;
     position: absolute;
     left: 0;

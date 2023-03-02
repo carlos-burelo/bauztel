@@ -5,6 +5,7 @@ import _ from './ProductDetails.module.scss'
 import { useState } from 'react'
 import ProductSpecs from '../ProductSpecs'
 import { HeartIcon } from '#/shared/components/svg/icons'
+import Button from '#/shared/components/elements/Button'
 
 
 const ProductDetails: FC<ProductInterface> = (product) => {
@@ -38,7 +39,7 @@ const ProductDetails: FC<ProductInterface> = (product) => {
           <h1 className={_.name}>{name}</h1>
           <div className={_.priceBox}>
             <h3 className={_.price}>$ {price} MXN</h3>
-            <p className={_.stock}>Disponibles: <strong>{stock}</strong> unidades</p>
+            <p className={_.stock}>Disponibles: <strong>{stock}</strong></p>
           </div>
           <p className={_.description}>
             {description}
@@ -49,7 +50,9 @@ const ProductDetails: FC<ProductInterface> = (product) => {
               <input className={_.input} minLength={0} type="number" value={quantity} readOnly />
               <button className={_.more} onClick={handleMore}>+</button>
             </div>
-            <button className={_.button}>Agregar al carrito</button>
+            <Button className={_.btn}>
+              Agregar al carrito
+            </Button>
           </div>
           <div className={_.aditionalInfo}>
             <p className={_.sku}><strong>SKU</strong>: {sku}</p>
@@ -57,10 +60,14 @@ const ProductDetails: FC<ProductInterface> = (product) => {
           </div>
 
           <div className={_.addToFavorite}>
-            <button className={_.button}>
+            <Button className={_.btn}>
               <HeartIcon />
-              <span>Agregar a favoritos</span>
-            </button>
+              Agregar a favoritos
+            </Button>
+            <Button className={_.btn}>
+              <HeartIcon />
+              Comprar ahora
+            </Button>
           </div>
         </div>
       </div>

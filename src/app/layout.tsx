@@ -1,3 +1,4 @@
+import Footer from '#/shared/components/layout/Footer'
 import Navbar from '#components/layout/Navbar'
 import '#styles/globals.scss'
 
@@ -14,6 +15,7 @@ const RootLayout: FC = ({ children }) => {
         <div className="container">
           {children}
         </div>
+        <Footer />
       </body>
     </html>
   )
