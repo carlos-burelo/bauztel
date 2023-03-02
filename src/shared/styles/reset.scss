@@ -75,7 +75,8 @@ p {
   font-size: 1.2em;
 }
 
-input {
+input,
+textarea {
   width: 100%;
   outline: none;
   border: solid 1px var(--borderColorInput);
@@ -88,8 +89,21 @@ input {
     color: var(--colorText);
   }
 
+  &:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px var(--backgroundInput) inset !important;
+    -webkit-text-fill-color: var(--colorTitle) !important;
+  }
+
   &:focus,
   &:hover {
     box-shadow: 0 0 0 1px var(--borderColorInput);
   }
+}
+
+iframe {
+  max-width: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 1em;
+  box-shadow: var(--boxShadowCardLight)
 }
