@@ -1,6 +1,7 @@
 import Footer from '#/shared/components/layout/Footer'
 import Navbar from '#components/layout/Navbar'
 import '#styles/globals.scss'
+import { ViewTransitions } from 'next-view-transitions';
 
 export const metadata = {
   title: 'Bauztel - Website',
@@ -9,15 +10,20 @@ export const metadata = {
 
 const RootLayout: FC = ({ children }) => {
   return (
+    <ViewTransitions>
+
     <html lang='es'>
       <body>
         <Navbar />
         <div className="container">
           {children}
         </div>
-        <Footer />
+          <br />
+          <br />
+          {/* <Footer /> */}
       </body>
     </html>
+    </ViewTransitions>
   )
 }
 

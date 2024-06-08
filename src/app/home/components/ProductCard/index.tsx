@@ -7,7 +7,8 @@ import _ from './ProductCard.module.scss'
 
 const ProductCard: FC<ProductInterface> = (product) => {
   const { price, sale, slug, thumbnail, name } = product
-  const newPrice = sale ? price - (price * sale.discount) / 100 : price
+  let newPrice = sale ? price - (price * sale.discount) / 100 : price
+  newPrice = Math.round(newPrice * 100) / 100
 
   return (
     <Link className={_.product} href={`/products/${slug}`}>
@@ -31,7 +32,7 @@ const ProductCard: FC<ProductInterface> = (product) => {
             )}
           </div>
         </div>
-        <Button text='View Product' href={`/products/${slug}`} fit />
+        <Button text='Ver producto' href={`/products/${slug}`} fit />
       </div>
     </Link>
   )

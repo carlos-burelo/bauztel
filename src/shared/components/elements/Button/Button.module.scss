@@ -10,3 +10,12 @@
   @include flexCenter;
   gap: 1em;
 }
+.btn:disabled {
+  background-color: var(--backgroundButtonDisabled);
+  color: var(--colorText);
+  cursor: not-allowed;
+}
+
+.btn:hover {
+  background-color: var(--backgroundButtonHover);
+}

@@ -1,19 +1,18 @@
 .container {
   display: grid;
-  align-content: center;
-  margin: auto;
-
+  align-content: flex-start;
+    // margin: auto;
   @include fold {
     width: 90%;
   }
 
   @include tablet {
-    width: 80%;
+    width: 100%;
   }
 
-  @include portatil {
-    width: 70%;
-  }
+                // @include portatil {
+                //   width: 70%;
+                // }
 }
 
 .title {

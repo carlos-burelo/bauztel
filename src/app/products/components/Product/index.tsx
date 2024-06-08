@@ -8,7 +8,8 @@ interface Props extends ProductInterface {
 
 const Product: FC<Props> = ({ name, price, thumbnail, slug, sale }) => {
 
-  const newPrice = sale ? price - (price * sale.discount) / 100 : price
+  let newPrice = sale ? price - (price * sale.discount) / 100 : price
+  newPrice = Math.round(newPrice * 100) / 100
 
   return (
     <Link href={`/products/${slug}`} className={_.product}>
@@ -16,8 +17,9 @@ const Product: FC<Props> = ({ name, price, thumbnail, slug, sale }) => {
         className={_.image}
         src={thumbnail}
         alt={name}
-        width={300}
-        height={300}
+        width={200}
+        height={200}
+        objectFit='contain'
         priority
       />
       <div className={_.info}>

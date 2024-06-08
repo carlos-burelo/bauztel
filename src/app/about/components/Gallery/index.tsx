@@ -44,10 +44,10 @@ const Gallery: FC = () => {
     <div className={_.container}>
       <header className={_.head}>
         <h3 className={_.title}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Raíces del Café
         </h3>
         <p className={_.description}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. A similique eum eveniet recusandae animi officiis veniam eaque facere! Pariatur, porro.
+          Descubre los orígenes de nuestro café en las exuberantes tierras de Brasil.
         </p>
       </header>
       <div className={_.slider}>

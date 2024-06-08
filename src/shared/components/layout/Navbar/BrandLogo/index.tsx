@@ -4,7 +4,7 @@ import Link from 'next/link'
 const BrandLogo: FC = () => {
   return (
     <Link href='/' className={_.logo}>
-      Bauztel Coffe
+      Café Bauztel
     </Link>
   )
 }

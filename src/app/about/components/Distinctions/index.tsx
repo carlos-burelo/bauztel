@@ -7,10 +7,10 @@ const Distinctions: FC = () => {
     <div className={_.distinctions}>
       <header className={_.head}>
         <h2 className={_.title}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Explora la Amplia Gama de Sensaciones que Ofrecemos con Nuestro Café
         </h2>
         <p className={_.text}>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit molestias excepturi quibusdam eius perferendis veritatis.
+          Descubre los Diversos Beneficios de Nuestra Amplia Selección de Cafés Especiales: Una Experiencia Sensorial para Todos los Sentidos
         </p>
       </header>
       <div className={_.cards}>

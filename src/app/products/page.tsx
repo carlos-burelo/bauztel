@@ -1,4 +1,4 @@
-import { PRODUCTS } from '#/shared/mocks/products'
+import { PRODUCTS } from '#/shared/mocks/data'
 import Header from './components/Header'
 import Infobar from './components/Infobar'
 import ProductList from './components/ProductList'

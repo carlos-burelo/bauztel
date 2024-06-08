@@ -14,11 +14,11 @@ const AboutUs: FC = () => {
         priority
       />
       <div className={_.box}>
-        <h2 className={_.title}>About Us</h2>
+        <h2 className={_.title}>Descubre el Encanto de Brasil en Cada Taza</h2>
         <p className={_.decription}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, tempore unde rerum, corrupti perspiciatis voluptas ipsam sapiente quam, facilis accusamus labore atque numquam dolorem a quis aut! Fugiat, officiis tenetur. Error a expedita qui porro non consectetur aperiam magni eius neque. Fugiat tempore adipisci dignissimos velit provident? Libero, necessitatibus qui.
+          Sumérgete en la rica tradición cafetera de Brasil con nuestra nueva sección. Provenientes de las exuberantes regiones cafetaleras del país, nuestros granos brasileños ofrecen un sabor único y distintivo que cautiva los sentidos. Experimenta la pasión y el cuidado con los que cada grano es cultivado, llevando a tu hogar la auténtica esencia de Brasil en cada taza. 
         </p>
-        <Button href="/wholesale" text="Join us now!" fit />
+        <Button href="/products" text="Compra ahora!" fit />
       </div>
     </div>
   )

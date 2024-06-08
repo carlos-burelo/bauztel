@@ -7,16 +7,17 @@ const Hero: FC = () => {
     <main className={_.hero}>
       <div className={_.content}>
         <h1 className={_.title}>
-          Lorem ipsum, dolor sit amet <mark>consectetur</mark> ?
+          Únete a Nuestro Programa de <mark>Afiliados</mark>!
         </h1>
         <p className={_.description}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nemo accusantium atque placeat ex unde.
+          ¡Conviértete en nuestro socio y gana comisiones promocionando nuestros productos de calidad!
         </p>
-        <Button href="/wholesale#form" text='Get Started' fit />
+        <Button href="/wholesale#form" text='Inicia' fit />
       </div>
       <Image
-        src="/hero.jpg"
+        src="/coffe-team.jpg"
         alt="Hero"
+        objectFit='cover'
         width={500}
         height={600}
         className={_.image}

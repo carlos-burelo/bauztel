@@ -67,8 +67,18 @@ button {
   font-weight: 600;
   cursor: pointer;
   @include flexCenter;
+  transition: background-color .3s;
 }
 
+button:disabled {
+  background-color: var(--backgroundButtonDisabled);
+  color: var(--colorText);
+  cursor: not-allowed;
+}
+
+button:hover {
+  background-color: var(--backgroundButtonHover);
+}
 p {
   line-height: 1.8;
   color: var(--colorText);

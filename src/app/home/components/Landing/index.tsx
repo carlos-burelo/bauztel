@@ -12,20 +12,21 @@ const Landing: FC = () => {
           height={600}
           alt='Bauztel coffe'
           className={_.img}
+          loading='eager'
           priority
         />
       </section>
       <section className={_.hero}>
         <h1 className={_.title}>
-          Pure Coffee.<br />
-          Pure Experience.
+          Momentos especiales,<br />
+          café único.
         </h1>
         <p className={_.details}>
-          We&#8217;re proud to offer our exquisite coffee and proud to support producer partners doing sustainability work that benefits their farms, their communities, and the planet.
+          Descubre la experiencia única de nuestro café seleccionado de los mejores granos. Ofrecemos asesoramiento personalizado y productos frescos de alta calidad. ¡Transforma tu rutina diaria con el sabor excepcional de nuestro café!
         </p>
         <div className={_.buttons}>
-          <Button href='/products' text='Shop now' />
-          <Button href='/about' text='Our story' />
+          <Button href='/products' text='Comprar ahora' />
+          <Button href='/about' text='Nosotros' />
         </div>
       </section>
     </main>

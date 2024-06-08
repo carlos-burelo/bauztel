@@ -6,9 +6,9 @@ const Order: FC = () => {
   return (
     <section className={_.order}>
       <div className={_.info}>
-        <h2 className={_.title}>Order your favorite coffee</h2>
-        <p className={_.paragraph}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cum ducimus optio nemo voluptatem quasi facilis minus voluptatum debitis, blanditiis quaerat? Consequuntur id asperiores assumenda nulla!</p>
-        <Button text='Order now' href='/products' fit />
+        <h2 className={_.title}>Ordena tu café favorito</h2>
+        <p className={_.paragraph}>Ofrecemos una selección premium de granos de todo el mundo. Encuentra el sabor perfecto y recíbelo fresco en la puerta de tu casa. ¡Disfruta del mejor café sin salir de casa!</p>
+        <Button text='Ordenar ahora' href='/products' fit />
       </div>
       <div className={_.image}>
         <Image
@@ -16,6 +16,7 @@ const Order: FC = () => {
           alt='Order coffee'
           width={500}
           height={400}
+          loading='lazy'
           className={_.img}
         />
       </div>
