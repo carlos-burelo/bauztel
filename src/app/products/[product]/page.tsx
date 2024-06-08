@@ -1,5 +1,5 @@
 import ProductDetails from './components/ProductDetails'
-import { PRODUCTS } from '#/shared/mocks/products'
+import { PRODUCTS } from '#/shared/mocks/data'
 import { ProductInterface } from '#/shared/types/schemas'
 
 export async function generateStaticParams () {

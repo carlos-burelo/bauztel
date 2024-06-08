@@ -1,4 +1,4 @@
-import { PRODUCTS } from '#/shared/mocks/products'
+import { PRODUCTS } from '#/shared/mocks/data'
 import ProductCard from '../ProductCard'
 import _ from './LatestProducts.module.scss'
 
